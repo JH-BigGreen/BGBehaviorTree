@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e80ae883bcd7400e9aa1f48785f5239c, type: 3}
+  m_Name: BehaviorTreeAsset
+  m_EditorClassIdentifier: 
+  root:
+    guid: 
+    nodePosition: {x: 0, y: 0}
+    comment: 
+    m_Child:
+      rid: 6763774497347600384
+  variables:
+  - rid: 6763774497347600398
+  - rid: 6763774497347600405
+  unusedNodes: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 6763774497347600384
+      type: {class: Sequence, ns: BG.BT, asm: BG.BT}
+      data:
+        guid: e5d8941c-4030-43b7-9c6a-dfbafa82e0f0
+        nodePosition: {x: 18, y: 128}
+        comment: 
+        m_Children:
+        - rid: 6763774497347600385
+        - rid: 6763774497347600386
+        - rid: 6763774497347600394
+    - rid: 6763774497347600385
+      type: {class: Wait, ns: BG.BT, asm: BG.BT}
+      data:
+        guid: 34bb86c7-bfdd-42dd-a8bc-d9efa46ba824
+        nodePosition: {x: -415, y: 343}
+        comment: 
+        waitTime:
+          m_Name: 
+          m_Shared: 0
+          m_Value: 5
+    - rid: 6763774497347600386
+      type: {class: DebugLog, ns: BG.BT, asm: BG.BT}
+      data:
+        guid: 8679a730-f01b-44d9-8300-d7a5766292f5
+        nodePosition: {x: -133, y: 343}
+        comment: 
+        log:
+          m_Name: 
+          m_Shared: 0
+          m_Value: TestLog
+    - rid: 6763774497347600394
+      type: {class: Selector, ns: BG.BT, asm: BG.BT}
+      data:
+        guid: 53cc8422-ff34-42d7-820c-40ad8c5b3d9c
+        nodePosition: {x: 190, y: 288}
+        comment: 
+        m_Children:
+        - rid: 6763774497347600395
+        - rid: 6763774497347600404
+    - rid: 6763774497347600395
+      type: {class: ReturnFailure, ns: BG.BT, asm: BG.BT}
+      data:
+        guid: 9ee462b9-a8a6-4ab8-b6fe-837c00250b5c
+        nodePosition: {x: 94, y: 440}
+        comment: 
+        m_Child:
+          rid: 6763774497347600403
+    - rid: 6763774497347600398
+      type: {class: SharedString, ns: BG.BT, asm: BG.BT}
+      data:
+        m_Name: SharedString
+        m_Shared: 0
+        m_Value: TestString
+    - rid: 6763774497347600403
+      type: {class: DebugLog, ns: BG.BT, asm: BG.BT}
+      data:
+        guid: d5076310-2b3f-4350-b8d2-29a4a69271c7
+        nodePosition: {x: 40, y: 614}
+        comment: 
+        log:
+          m_Name: SharedString
+          m_Shared: 1
+          m_Value: 
+    - rid: 6763774497347600404
+      type: {class: Wait, ns: BG.BT, asm: BG.BT}
+      data:
+        guid: 194535af-ee9e-4bbc-901a-4fd927cbe45d
+        nodePosition: {x: 429, y: 474.2}
+        comment: "\u7B49\u4E00\u4F1A "
+        waitTime:
+          m_Name: SharedFloat
+          m_Shared: 1
+          m_Value: 0
+    - rid: 6763774497347600405
+      type: {class: SharedFloat, ns: BG.BT, asm: BG.BT}
+      data:
+        m_Name: SharedFloat
+        m_Shared: 0
+        m_Value: 5

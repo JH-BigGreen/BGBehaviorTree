@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.bg_green.behavior_tree/Editor/Resources/BTTreeWindow.uss?fileID=7433441132597879392&amp;guid=80a240e85ff1afd44aa58f0eae9b93b6&amp;type=3#BTTreeWindow" />
+    <BG.BTEditor.SplitView fixed-pane-initial-dimension="400">
+        <ui:VisualElement name="left-panel">
+            <uie:Toolbar>
+                <uie:ToolbarToggle focusable="false" label="BlackBoard" value="true" name="blackBoard-toggle" />
+                <uie:ToolbarToggle focusable="false" label="Inspector" name="inspector-toggle" />
+            </uie:Toolbar>
+            <ui:ScrollView name="left-content" />
+        </ui:VisualElement>
+        <ui:VisualElement name="right-panel">
+            <uie:Toolbar style="justify-content: flex-end;">
+                <uie:ToolbarButton tabindex="-1" text="Save" display-tooltip-when-elided="true" name="save-btn" />
+            </uie:Toolbar>
+            <ui:Label tabindex="-1" text="asset" display-tooltip-when-elided="true" name="asset-title" style="-unity-text-align: upper-left; color: rgb(0, 0, 0);" />
+            <BG.BTEditor.TreeView focusable="true" name="tree-view" style="flex-grow: 1;" />
+        </ui:VisualElement>
+    </BG.BTEditor.SplitView>
+</ui:UXML>
